@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<!--  Title goes here  -->		
+		<title>Shopping List</title>
+                
+        <!--  meta tag goes here  -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				                
+        <!--  fontawosome  -->		
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+                
+        <!--  google font  -->		
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:700i" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!--  CSS stylesheet link  -->		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+	</head>
+	
+<body>
+
+<h1>Shopping List</h1>
+<!-- form list section -->
+<div class=" myContainer">
+	<h2>Add Items </h2>
+	<i id="expander1" class="fa fa-plus" onclick="my_toggler()"></i>
+</div>
+
+<div id="myDIV1" class="form_list">			
+	<input type="text" id="itemName" name="name" placeholder="Name"
+	required maxlength="50" pattern="^[a-zA-Z0-9 _-]+$"/>
+	<input type="number" id="itemQuantity" name="Quantity" placeholder="Quantity"
+	required pattern="/\d/" min="0" max="300"/>
+	<button onclick="addItem()" class="add_btn"><i class="fa fa-plus"></i> Add Item</button>
+</div>
+
+<!-- shopping list section -->
+<div class="myContainer">
+	<h2>Shopping List </h2>
+	<i id="expander2" class="fa fa-plus" onclick="my_toggler()"></i>
+</div>
+
+<div id="myDIV2" class="shopping_list">	
+	<ul id="myList"></ul>
+</div>
+
+
+
+<!-- done list section -->
+<div class="myContainer">
+	<h2>Done List </h2>
+	<i id="expander3" class="fa fa-plus" onclick="my_toggler()"></i>
+</div>
+
+<div id="myDIV3" class="done_list">
+	
+	<ul id="doneList">
+		
+	</ul>
+</div>
+
+	
+<!-- Javascript functions -->
+<script src="js/functions.js"></script>
+
+</body>
+</html>

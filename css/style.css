@@ -1,0 +1,174 @@
+* { box-sizing: border-box; }
+
+/*-- body styling  --*/
+body {	
+    width: 70%; 
+    margin: 0 auto;
+    border-bottom:1px solid lightgray;
+    border-top:1px solid lightgray;
+    font-family: 'PT Sans', sans-serif;
+    margin-top:10px;
+}
+
+.shopping_list, .done_list {
+    display:flex;
+    /* justify-content: center; */
+    width: 80%; 
+    margin: 0 auto;
+    border:1px solid #67992a;
+    margin-bottom: 12px;
+    box-shadow: 10px 10px grey;
+
+}
+.form_list{
+    display:flex;
+    justify-content: center;
+    width: 80%; 
+    margin: 0 auto;
+    /* border-left:1px solid #67992a;
+    border-right:1px solid #67992a;
+    border-top:0; */
+    border:1px solid #67992a;
+    margin-bottom: 12px;
+    box-shadow: 10px 10px grey;
+}
+.form_list *{
+    padding-left:10px;
+    margin-left: 10px;
+}
+
+h2 {
+    color: #c4df82;
+}
+h1 {
+    
+    text-align: center;
+    color: #67992a;
+}
+/* Style the list items */
+.myDIV2{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+ul {
+    display:flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    width:100%;
+    /* -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+    
+  }
+
+li{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width:100%;
+      padding:0;
+      margin:0;
+      border-bottom:1px solid lightgray;
+
+  }
+.add_btn{
+    background-color: inherit;
+    outline: 0;
+    border: none;
+    color: #67992a;
+    cursor: pointer;
+    width: 15%; 
+ } 
+li i, .fa-trash, .fa-undo{
+    width: 15%;
+    color: #67992a;
+    padding-left:40px;
+    font-size: 200%;
+}
+
+li i:hover {
+    background-color: inherit;
+    color: #466e0e;
+}
+.add_btn:hover {
+    background-color: inherit;
+    color: #466e0e;
+}
+
+.add_btn:after {
+    background-color: inherit;
+    color: #466e0e;
+}
+
+.spanName, .spanName_done {
+    color: gray;
+    font-size: 200%; 
+    width:40%;
+    outline: none;
+}
+
+.spanQuantity, .spanQuantity_done {
+    color: darkgrey;
+    font-size: 200%; 
+    width:20%;     
+    outline: none;
+}
+
+
+input[type="text"], input[type="number"]
+{
+    border: 0;
+	border-bottom: 1px solid #d4e8a0;
+	background: transparent;
+	outline: 0;
+	margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 100%;
+    color:grey;
+}
+
+#itemName{
+    width:50%;
+    font-size: 150%;
+    padding:0;
+}
+
+#itemQuantity, .add_btn, .add_btn fa-plus{
+    width:20%;
+    padding:0;    
+    font-size: 150%;
+}
+.add_btn, .add_btn fa-plus{
+    width:20%;
+    padding:0;    
+    font-size: 100%;
+}
+#expander{
+    font-size:100%;
+    color: #466e0e;
+}
+
+.myContainer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    color:#466e0e;
+    font-size: 100%;
+  }
+ 
+.warning{
+    color:red;
+    display: none;
+}
+input:valid {
+}
+input:invalid {
+    color: red;
+  }
+  
